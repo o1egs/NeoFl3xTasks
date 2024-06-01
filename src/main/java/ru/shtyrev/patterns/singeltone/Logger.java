@@ -1,5 +1,6 @@
 package ru.shtyrev.patterns.singeltone;
 
+import java.time.LocalDate;
 import java.util.Objects;
 
 public class Logger {
@@ -20,7 +21,7 @@ public class Logger {
     }
 
     public void classLogg(Object object, String info) {
-        System.out.println("Log info: 21.07.23 - "+ object.getClass().getSimpleName() +" - " + info);
+        System.out.println("Log info:" + LocalDate.now() + " - " + object.getClass().getSimpleName() +" - " + info);
     }
 
     public static void main(String[] args) {
